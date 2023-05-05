@@ -66,14 +66,12 @@
 
                                     <input type="hidden" name="Pure Beef Cheeseburger">
                                             
-
                                     <p style="font-size:20px"><strong>Quantity:</strong>
-                                        <input type="number" name="Quantity">
-                                    </p>
+                                    <input type="number" name="Quantity"maxlength="5" size="40" ng-model="quantity"></p>
 
-                                    <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_captcha" value="false">
 
-                                    <p name="Total: " style="font-size:20px"><strong>Total: ₱</strong> {{quantity * price}}</p>
+                                <p name="Total: " style="font-size:20px"><strong>Total: ₱</strong> {{quantity * price}}</p>
                                 </div>
                                 <input type="submit" value="Check Out" class="btn">
 
