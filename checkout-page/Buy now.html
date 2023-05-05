@@ -63,7 +63,7 @@
                                 </center>
                                     
                                 <input type="hidden" name="Pure Beef Cheeseburger">
-                                <div class="price"></div>
+
                                 <p style="font-size:20px"><strong>Order Details</strong>  
                                 <p style="font-size:20px"><strong>&emsp;Name:</strong>     
                                 <input style="height:20px; width: 10em; font-size:14pt;" type="text" name="Name:" placeholder="Name" required>
@@ -96,13 +96,14 @@
 
                                     <p style="font-size:20px"><strong>&emsp;Payment Details</strong> 
                                     <p style="font-size:20px"><strong>&emsp;&emsp;Quantity:</strong>
-                                    <input style="height:20px; width: 14; font-size:14pt;" type="number" name="Quantity" ng-model="quantity"></p>
+                                    <input style="height:20px; width: 10em; font-size:14pt;" type="number" name="Quantity" ng-model="quantity"></p>
 
                                     <input type="hidden" name="_captcha" value="false">
 
                                     <p name="Total: " style="font-size:20px"><strong>&emsp;&emsp;Merchandise Subtotal: ₱</strong> {{quantity * price}}</p>
-                                    <p style="font-size:20px"><strong>&emsp;&emsp;ShippingSubtotal: ₱60</strong>  
-                                    <input name="Total: " style="font-size:20px"><strong>&emsp;&emsp;Total Payment ₱</strong> {{quantity * price + shipping}}
+                                    <p style="font-size:20px"><strong>&emsp;&emsp;ShippinSubtotal: ₱60</strong> <br> 
+                                    <label for="Total" name="Total: " style="font-size:20px"><strong>&emsp;&emsp;Total Payment ₱</strong> {{quantity * price + shipping}}</label>
+                                    <input type="hidden" id="Total"name="Total:">
 
                                 </div>
                                 <input type="submit" value="Check Out" class="btn">
