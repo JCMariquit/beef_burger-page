@@ -22,45 +22,72 @@
     <div class="icons">
         <div class="fas fa-share" id="theme-btn" onclick="history.back()"></div>
     </div>
+
     <a href="#" class="logo"> <i class="fas fa-utensils"></i> JB's Yard </a>
-
     <div></div>
-
-     
+ 
 </header>
-
 
 <section class="pricing" id="pricing">
 
     <br><br><br><br><br><br><br><br><br><br>
     
     <div class="box-container">
-        <form action="https://formsubmit.co/junecharlesmariquit553@gmail.com" method="POST">
             <div class="box" data-aos="zoom-in-up">
-                <h3 class="heading"> Check <span>Out</span> </h3>
-                
                 <center>
-                    <div class="price">
-                        <span>₱</span>
-                        <span class="amount" >150</span>
-                        <span>/pcs</span>
-                    </div>
+                    <div>
+                        <h3 class="heading"> Check <span>Out</span> </h3>
+                    </div><br><br>
                 </center>
-                
-                <div data-ng-app="" data-ng-init="quantity=0;price=150">
 
-                    <p style="font-size:30px"><strong>Cost Calculator</strong></p>
 
-                    <p style="font-size:20px"><strong>Quantity:<input type="number" name="Quantity"maxlength="5" size="40" ng-model="quantity"></p>
-                    <input type="hidden" name="_captcha" value="false">
+                <section class="placeorder" id="placeorder">
 
-                    <input type="hidden"  name="Total: " style="font-size:20px" Total: ₱ {{quantity * price}}>
+                    <div class="box-container">
+                        
+                        <div class="box" data-aos="zoom-in-up">
+                            <form action="https://formsubmit.co/junecharlesmariquit553@gmail.com" method="POST">
 
-                </div>
-                <input type="submit" value="Check Out" class="btn">
+                                <center>
+                                    <div class="price">
+                                        <h3 class="heading"> Pure beef <span>Cheeseburger</span> </h3>
+                                    </div>
+                                </center>
+
+                                <center>
+                                <div class="price">
+                                        <span>₱</span>
+                                        <span class="amount" >150</span>
+                                        <span>/pcs</span>
+                                    </div>
+                                </center>
+                                    
+                                <div data-ng-app="" data-ng-init="quantity=0;price=150">
+
+                                    <input type="hidden" name="Pure Beef Cheeseburger">
+                                            
+
+                                    <p style="font-size:20px"><strong>Quantity:</strong>
+                                        <input type="number" name="Quantity">
+                                    </p>
+
+                                    <input type="hidden" name="_captcha" value="false">
+
+                                    <p name="Total: " style="font-size:20px"><strong>Total: ₱</strong> {{quantity * price}}</p>
+                                </div>
+                                <input type="submit" value="Check Out" class="btn">
+
+                                <ul>
+                                    <li><strong>Discription</strong></li>
+                                    <li>cheeseburger is a hamburger topped with cheese. Traditionally, the slice of cheese is placed on top of the meat patty. The cheese is usually added to the cooking hamburger patty shortly before serving, which allows the cheese to melt. Cheeseburgers can include variations in structure, ingredients and composition.</li>
+                                    <li><strong>Ingredients</strong></li>
+                                    <li>buns, beef patty, letuce, mustart, ketchop, chopped onions, pickles, cheese</li>
+                                </ul>
+                            </form>
+                        </div>  
+                    </div>
+                </section>   
             </div>
-            
-        </form>
     </div>
 </section>
 
@@ -103,11 +130,9 @@
             <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
             <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
         </div>
-
     </div>
 
     <div class="credit"> created by <span>BSIT 2C/Group 5</span> | all rights reserved </div>
-
 </section>
 
 <!-- footer section ends -->

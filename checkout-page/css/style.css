@@ -7,6 +7,7 @@
     --text-color-2:#000000;
     --bg-color-1:#ffcc33;
     --bg-color-2:#eee;
+    --bg-color-3:#fff;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
@@ -62,6 +63,8 @@ section{
     color:var(--text-color-1);
     font-size: 4rem;
 }
+
+
 
 .heading span{
     position: relative;
@@ -180,10 +183,11 @@ section{
 
 .pricing .box-container .box h3{
     padding:1rem;
-    background: var(--bg-color-2);
-    border-radius: .5rem;
-    font-size: 2rem;
+    background: var(--bg-color-3);
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
     color:var(--text-color-1);
+    width: 87%;
 }
 
 .pricing .box-container .box .price{
@@ -201,6 +205,8 @@ section{
     font-weight: bolder;
 }
 
+
+
 .pricing .box-container .box ul{
     padding: .5rem 0;
     list-style: none;
@@ -211,6 +217,54 @@ section{
     font-size: 1.7rem;
     color:var(--text-color-2);
 }
+.placeorder .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.placeorder .box-container .box{
+    background:var(--bg-color-2);
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    padding:3rem;
+    text-align: left;
+}
+
+.placeorder .box-container .box h3{
+    padding:1rem;
+    background: var(--bg-color-3);
+    border-radius: .5rem;
+    font-size: 2rem;
+    color:var(--text-color-1);
+}
+
+.placeorder .box-container .box .price{
+    padding-top: 2rem;
+}
+
+.placeorder .box-container .box .price span{
+    font-size: 2rem;
+    color:var(--text-color-2);
+}
+
+.placeorder .box-container .box .price .amount{
+    font-size: 5rem;
+    color:var(--text-color-1);
+    font-weight: bolder;
+}
+
+.placeorder .box-container .box ul{
+    padding: .5rem 0;
+    list-style: none;
+}
+
+.placeorder .box-container .box ul li{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color:var(--text-color-2);
+}
+
 
 .br {margin-bottom: 30em}
 
