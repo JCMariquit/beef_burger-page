@@ -96,13 +96,13 @@
 
                                     <p style="font-size:20px"><strong>&emsp;Payment Details</strong> 
                                     <p style="font-size:20px"><strong>&emsp;&emsp;Quantity: </strong>
-                                    <input style="height:20px; width: 14; font-size:14pt;" type="number" name="Quantity  {{quantity * price + shipping}}" ng-model="quantity"></p></p>
+                                    <input style="height:20px; width: 14; font-size:14pt;" type="number" name="Quantity " ng-model="quantity"></p></p>
 
                                     <input type="hidden" name="_captcha" value="false">
 
                                     <p name="Total: " style="font-size:20px"><strong>&emsp;&emsp;Merchandise Subtotal: ₱</strong> {{quantity * price}}</p>
                                     <p style="font-size:20px"><strong>&emsp;&emsp;ShippingSubtotal: ₱60</strong> <br> 
-                                    <input type="hidden" name="Total: " style="font-size:20px"><strong>&emsp;&emsp;Total Payment ₱</strong> {{quantity * price + shipping}}</input>
+                                    <input type="hidden" name="Total:  {{quantity * price + shipping}}" style="font-size:20px"><strong>&emsp;&emsp;Total Payment ₱</strong> {{quantity * price + shipping}}</input>
                                     
 
                                 </div>
