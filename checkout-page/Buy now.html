@@ -65,13 +65,14 @@
                                 <input type="hidden" name="Pure Beef Cheeseburger">
 
                                 <p style="font-size:20px"><strong>Order Details</strong>  
+                                <input type="hidden" name="Order Details">
                                 <p style="font-size:20px"><strong>&emsp;Name:</strong>     
                                 <input style="height:20px; width: 10em; font-size:14pt;" type="text" name="Name:" placeholder="Name" required></p></p>
 
                                 <p style="font-size:20px"><strong>&emsp;Address:</strong>   
                                 <p style="font-size:20px"><strong>&emsp;&emsp;Province:</strong>     
                                 <input style="height:20px; width: 10em; font-size:14pt;" type="text" name="Province:" placeholder="Marinduque" disabled> </p></p>
-                                <input type="hidden" name="Marinduque">
+                                <input type="hidden" name="Province: Marinduque">
 
                                 <p style="font-size:20px"><strong>&emsp;&emsp;Town:</strong>     
                                 <input style="height:20px; width: 10em; font-size:14pt;" type="text" name="Town:" placeholder="Town" required></p>
@@ -84,7 +85,7 @@
 
                                 <p style="font-size:20px"><strong>&emsp;Shipping Option:</strong>   
                                 <p style="font-size:20px"><strong>&emsp;&emsp;Payment option:</strong>     
-                                <input style="height:20px; width: 10em; font-size:14pt;" type="text" name="Payment option:" placeholder="Cash on Delivery" disabled> </p></p>
+                                <input style="height:20px; width: 10em; font-size:14pt;" type="text" name="Payment option:" placeholder="Cash on Delivery" contenteditable> </p></p>
                                 <input type="hidden" name="Marinduque">
 
                                 <p style="font-size:20px"><strong>&emsp;&emsp;Delivery:</strong>     
@@ -95,12 +96,12 @@
                                 <div data-ng-app="" data-ng-init="quantity=0;price=150;shipping=60">
 
                                     <p style="font-size:20px"><strong>&emsp;Payment Details</strong> 
-                                    <p style="font-size:20px"><strong>&emsp;&emsp;Quantity: </strong>
+                                    <p style="font-size:20px"><strong>&emsp;&emsp;Quantity:</strong>
                                     <input style="height:20px; width: 14; font-size:14pt;" type="number" name="Quantity " ng-model="quantity"></p></p>
 
                                     <input type="hidden" name="_captcha" value="false">
 
-                                    <p name="Total: " style="font-size:20px"><strong>&emsp;&emsp;Merchandise Subtotal₱</strong> {{quantity * price}}
+                                    <p name="Total: " style="font-size:20px"><strong>&emsp;&emsp;MerchandiseSubtotal₱</strong>{{quantity * price}}
                                     <input type="hidden" name="Merchandise Subtotal: ₱ {{quantity * price}}"></p>
                                     <p style="font-size:20px"><strong>&emsp;&emsp;ShippingSubtotal: ₱60</strong>
                                     <input type="hidden" name="ShippingSubtotal: ₱60"></p>
@@ -175,8 +176,6 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
