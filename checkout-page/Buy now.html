@@ -100,11 +100,13 @@
 
                                     <input type="hidden" name="_captcha" value="false">
 
-                                    <p name="Total: " style="font-size:20px"><strong>&emsp;&emsp;Merchandise Subtotal: ₱</strong> {{quantity * price}}
+                                    <p name="Total: " style="font-size:20px"><strong>&emsp;&emsp;Merchandise Subtotal₱</strong> {{quantity * price}}
                                     <input type="hidden" name="Merchandise Subtotal: ₱ {{quantity * price}}"></p>
                                     <p style="font-size:20px"><strong>&emsp;&emsp;ShippingSubtotal: ₱60</strong>
-                                    <input type="hidden" name="ShippingSubtotal: 60"></p>
-                                    <input type="hidden" name="Total:  {{quantity * price + shipping}}" style="font-size:20px"><strong>&emsp;&emsp;Total Payment ₱</strong> {{quantity * price + shipping}}
+                                    <input type="hidden" name="ShippingSubtotal: ₱60"></p>
+                                    <p style="font-size:20px"><strong>&emsp;&emsp;Total Payment ₱</strong> {{quantity * price + shipping}}
+                                    <input type="hidden" name="Total Payment: ₱{{quantity * price + shipping}}">
+                                    </p>
                                 </div>
                                 <input type="submit" value="Check Out" class="btn">
 
