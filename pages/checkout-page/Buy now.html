@@ -71,7 +71,7 @@
                                     </p>
 
                                     <p style="font-size:20px"><strong>&emsp;Number:</strong>     
-                                        <input style="height:20px; width: 8.8em; font-size:14pt;" type="number" name="Number:" placeholder="Mobile-phone" required>
+                                        <input style="height:20px; width: 8.8em; font-size:14pt;" type="text" name="Number:" placeholder="Mobile-phone" required>
                                     </p>
                                 </p>
 
@@ -113,6 +113,42 @@
                                         <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="Dine-in:" placeholder="Dine-in" >
                                     </p>
                                 </p>
+
+                                <form method="post" action="/Tests/Post">  
+                                    <fieldset>    
+                                    <p style="font-size:20px"><strong>&emsp;&emsp;Dine-in</strong>  
+                                    <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="Dine-in" value="Cats" onclick="return ValidatePetSelection();"></p>
+                                    <input type="checkbox" name="Dine-in" value="Dogs" onclick="return ValidatePetSelection();">Dogs<br>  
+                                    <input type="checkbox" name="favorite_pet" value="Birds" onclick="return ValidatePetSelection();">Birds<br>  
+                                        <br>  
+                                    <input type="submit" value="Submit now">  
+                                    </fieldset>  
+                                </form>  
+
+                                <script type="text/javascript">  
+                                function ValidatePetSelection()  
+                                {  
+                                    var checkboxes = document.getElementsByName("Dine-in");  
+                                    var numberOfCheckedItems = 0;  
+                                    for(var i = 0; i < checkboxes.length; i++)  
+                                    {  
+                                        if(checkboxes[i].checked)  
+                                            numberOfCheckedItems++;  
+                                    }  
+                                    if(numberOfCheckedItems > 1)  
+                                    {  
+                                        alert("You can't select more than two favorite pets!");  
+                                        return false;  
+                                    }  
+                                }  
+                                </script>
+
+
+
+
+
+
+
 
 
 
@@ -158,7 +194,8 @@
 
 <section class="footer">
 
-    <div class="box-container">
+    <center>
+        <div class="box-container">
 
         <div class="box" data-aos="fade-up">
             <h3>Our Location</h3>
@@ -168,7 +205,6 @@
         <div class="box" data-aos="fade-up">
             <h3>contact us</h3>
             <a href="pages/Message/message.html"> <i class="fas fa-message"></i> Message Us </a>
-            
         </div>
 
         <div class="box" data-aos="fade-up">
@@ -178,6 +214,7 @@
         </div>
     </div>
 
+    </center>
     <div class="credit"> created by <span>BSIT 2C/Group 5</span> | all rights reserved </div>
 </section>
 
