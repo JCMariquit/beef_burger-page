@@ -167,6 +167,8 @@ section{
     padding-left: 2rem;
 }
 
+
+
 .pricing .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -267,8 +269,8 @@ section{
     color:var(--text-color-2);
 }
 
-
-.br {margin-bottom: 30em}
+.br {margin-bottom: 10em}
+.br1 {margin-bottom: 30em}
 
 .footer{
     background: var(--bg-color-1);
