@@ -91,39 +91,28 @@
                                 </p>
 
                                 <p style="font-size:20px"><strong>&emsp;&emsp;District:</strong>     
-                                    <input style="height:20px; width: 8.1em; font-size:14pt;" type="text" name="Barrangay district:" placeholder="Sitio/Bario" value="hello" required>
+                                    <input style="height:20px; width: 8.1em; font-size:14pt;" type="text" name="Barrangay district:" placeholder="Sitio/Bario" required>
                                 </p>
 
                                
-                            
-
-                                <form method="post" action="/Tests/Post">  
+             
                                     <fieldset>   
-                                    <p style="font-size:20px"><strong>&emsp;Shipping option:</strong>  
-                                    <p style="font-size:20px"><strong>&emsp;&emsp;Dine-in&nbsp;&nbsp;</strong>  
-                                        <input type="hidden" name="Shipping option">
-                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="." value="Dine-in" onclick="return ValidatePetSelection();">
-                                        
-                                    </p>
-                                    <p style="font-size:20px"><strong>&emsp;&emsp;Delivery</strong>  
-                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" value="Delivery" onclick="return ValidatePetSelection();">
-                                    </p>
-
-
-                                    <p style="font-size:20px"><strong>&emsp;Payment option:</strong>  
-                                    <p style="font-size:20px"><strong>&emsp;&emsp;COD</strong> 
-                                        <input type="hidden" name="Payment option"> 
-                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="." value="COD" onclick="return ValidatePetSelection();">
-                                        
-                                    </p>
-                                   
+                                        <p style="font-size:20px"><strong>&emsp;Shipping option:</strong>  
+                                            <p style="font-size:20px"><strong>&emsp;&emsp;Dine-in&nbsp;&nbsp;</strong>  
+                                                <input type="hidden" name="Shipping option">
+                                                <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="Shipping" value="Dine-in" onclick="return ValidatePetSelection();">
+                                            </p>
+                                            <p style="font-size:20px"><strong>&emsp;&emsp;Delivery</strong>  
+                                                <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="Shipping" value="Delivery" onclick="return ValidatePetSelection();">
+                                            </p>
+                                        </p>
                                     </fieldset>  
                                
 
                                     <script type="text/javascript">  
                                     function ValidatePetSelection()  
                                     {  
-                                        var checkboxes = document.getElementsByName(".");   
+                                        var checkboxes = document.getElementsByName("Shipping");   
                                         var numberOfCheckedItems = 0;  
                                         for(var i = 0; i < checkboxes.length; i++)  
                                         {  
@@ -137,16 +126,6 @@
                                         }  
                                     }  
                                     </script>
-
-
-
-
-
-
-
-
-
-
                                 <div data-ng-app="" data-ng-init="quantity=0;price=150;shipping=60">
 
                                     <p style="font-size:20px"><strong>&emsp;Payment Details</strong> 
@@ -175,7 +154,7 @@
                                     <li><strong>Ingredients</strong></li>
                                     <li>buns, beef patty, letuce, mustart, ketchop, chopped onions, pickles, cheese</li>
                                 </ul>
-                            </form></form>
+                            </form>
                         </div>  
                     </div>
                 </section>   
