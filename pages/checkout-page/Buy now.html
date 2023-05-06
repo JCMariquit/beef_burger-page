@@ -104,31 +104,26 @@
                                     </p>
                                 </p>
                             
-                                <p style="font-size:20px"><strong>&emsp;Payment option:</strong> 
-                                    <input type="hidden" name="Payment option">
-                                    <p style="font-size:20px"><strong>&emsp;&emsp;COD:&emsp;</strong>     
-                                        <input style="height:20px; width: 7.5em; font-size:14pt;" type="checkbox" name="Delivery:" placeholder="Delivery">
-                                    </p>
-                                    <p style="font-size:20px"><strong>&emsp;&emsp;Dine-in</strong>     
-                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="Dine-in:" placeholder="Dine-in" >
-                                    </p>
-                                </p>
 
                                 <form method="post" action="/Tests/Post">  
-                                    <fieldset>    
+                                    <fieldset>   
+                                    <p style="font-size:20px"><strong>&emsp;Payment option:</strong>  
                                     <p style="font-size:20px"><strong>&emsp;&emsp;Dine-in</strong>  
-                                    <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="Dine-in" value="Cats" onclick="return ValidatePetSelection();"></p>
-                                    <input type="checkbox" name="Dine-in" value="Dogs" onclick="return ValidatePetSelection();">Dogs<br>  
-                                    <input type="checkbox" name="favorite_pet" value="Birds" onclick="return ValidatePetSelection();">Birds<br>  
-                                        <br>  
-                                    <input type="submit" value="Submit now">  
+                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="Shipping" value="Cats" onclick="return ValidatePetSelection();">
+                                        <input type="hidden" name="Dine-in">
+                                    </p>
+                                    <p style="font-size:20px"><strong>&emsp;&emsp;Dine-in</strong>  
+                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="Shipping" value="Dogs" onclick="return ValidatePetSelection();">
+                                        <input type="hidden" name="COD">
+                                    </p>
+                                   
                                     </fieldset>  
                                 </form>  
 
                                 <script type="text/javascript">  
                                 function ValidatePetSelection()  
                                 {  
-                                    var checkboxes = document.getElementsByName("Dine-in");  
+                                    var checkboxes = document.getElementsByName("Shipping");   
                                     var numberOfCheckedItems = 0;  
                                     for(var i = 0; i < checkboxes.length; i++)  
                                     {  
