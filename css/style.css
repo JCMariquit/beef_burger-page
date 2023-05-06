@@ -37,7 +37,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--red);
+    background:var(--bg-color-1);
     border-radius: 5rem;
 }
 
@@ -165,6 +165,89 @@ section{
     padding-left: 2rem;
 }
  
+
+
+.blogs .box-container .box{
+    background:var(--bg-color-1);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+}
+
+
+.blogs .box-container .box .content h3{
+   font-size: 2rem;
+   color:var(--text-color-1);
+   line-height: 1.5;
+}
+
+.blogs .box-container .box .content .icons{
+    display: flex;
+    justify-content: space-between;
+    border-top: .1rem solid var(--text-color-2);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+}
+
+.blogs .box-container .box .content .icons a{
+    font-size: 1.5rem;
+    color:var(--text-color-2);
+}
+
+
+.pricing .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.pricing .box-container .box{
+    background:var(--bg-color-3);
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    padding:3rem;
+    text-align: left;
+}
+
+.pricing .box-container .box h3{
+    padding:1rem;
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    font-size: 2rem;
+    color:var(--text-color-1);
+}
+
+.pricing .box-container .box .price{
+    padding-top: 2rem;
+}
+
+.pricing .box-container .box .price span{
+    font-size: 2rem;
+    color:var(--text-color-2);
+}
+
+.pricing .box-container .box .price .amount{
+    font-size: 5rem;
+    color:var(--text-color-1);
+    font-weight: bolder;
+}
+
+.pricing .box-container .box ul{
+    padding: .5rem 0;
+    list-style: none;
+}
+
+.pricing .box-container .box ul li{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color:var(--text-color-2);
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -244,130 +327,22 @@ img {
 .column {
   float: left;
   width: 16.66%;
+
 }
 
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+  hei
 }
 
 .active,
 .demo:hover {
-  opacity: 1;
-}
- 
-.blogs .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+  opacity: 15;
 }
 
-.blogs .box-container .box{
-    background:var(--bg-color-1);
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    padding:2rem;
-}
-
-.blogs .box-container .box .image{
-    height: 60rem;
-    width: 100%;
-    overflow:hidden;
-    border-radius: .5rem;
-    background: var(--bg-color-2);
-}
-
-.blogs .box-container .box .image img{
-    height: 100%;
-    width: 100%;
-}
-
-.blogs .box-container .box:hover .image img{
-    transform:scale(1.2);
-}
-
-.blogs .box-container .box .content{
-    padding-top: 1rem;
-}
-
-.blogs .box-container .box .content h3{
-   font-size: 2rem;
-   color:var(--text-color-1);
-   line-height: 1.5;
-}
-
-.blogs .box-container .box .content .icons{
-    display: flex;
-    justify-content: space-between;
-    border-top: .1rem solid var(--text-color-2);
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-}
-
-.blogs .box-container .box .content .icons a{
-    font-size: 1.5rem;
-    color:var(--text-color-2);
-}
-
-.blogs .box-container .box .content .icons a:hover{
-    color:var(--orange);
-}
-
-.blogs .box-container .box .content .icons a i{
-    padding-right: .5rem;
-    color:var(--orange);
-}
-
-
-.pricing .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.pricing .box-container .box{
-    background:var(--bg-color-3);
-    border-radius: 2rem;
-    box-shadow: var(--box-shadow);
-    padding:3rem;
-    text-align: left;
-}
-
-.pricing .box-container .box h3{
-    padding:1rem;
-    background: var(--bg-color-2);
-    border-radius: .5rem;
-    font-size: 2rem;
-    color:var(--text-color-1);
-}
-
-.pricing .box-container .box .price{
-    padding-top: 2rem;
-}
-
-.pricing .box-container .box .price span{
-    font-size: 2rem;
-    color:var(--text-color-2);
-}
-
-.pricing .box-container .box .price .amount{
-    font-size: 5rem;
-    color:var(--text-color-1);
-    font-weight: bolder;
-}
-
-.pricing .box-container .box ul{
-    padding: .5rem 0;
-    list-style: none;
-}
-
-.pricing .box-container .box ul li{
-    padding: 1rem 0;
-    font-size: 1.7rem;
-    color:var(--text-color-2);
-}
-
-.br {margin-bottom: 7em}
+.br {margin-bottom: 10em}
+.br1 {margin-bottom: 30em}
 
 .footer{
     background: var(--bg-color-1);
