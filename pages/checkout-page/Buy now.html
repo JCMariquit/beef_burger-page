@@ -65,48 +65,65 @@
                                 <input type="hidden" name="Pure Beef Cheeseburger">
 
                                 <p style="font-size:20px"><strong>Order Details</strong>  
-                                <input type="hidden" name="Order Details">
-                                <p style="font-size:20px"><strong>&emsp;Name:</strong>     
-                                <input style="height:20px; width: 8em; font-size:14pt;" type="text" name="Name:" placeholder="Name" required></p></p>
+                                    <input type="hidden" name="Order Details">
+                                    <p style="font-size:20px"><strong>&emsp;Name:</strong>     
+                                        <input style="height:20px; width: 10em; font-size:14pt;" type="text" name="Name:" placeholder="Name" required>
+                                    </p>
+                                </p>
 
                                 <p style="font-size:20px"><strong>&emsp;Address:</strong>   
-                                <p style="font-size:20px"><strong>&emsp;&emsp;Province:</strong>     
-                                <input style="height:20px; width: 8em; font-size:14pt;" type="text" name="Province:" placeholder="Marinduque" disabled> </p></p>
-                                <input type="hidden" name="Province:Marinduque">
+                                    <p style="font-size:20px"><strong>&emsp;&emsp;Province:</strong>     
+                                        <input style="height:20px; width: 8em; font-size:14pt;" type="text" name="Province:" placeholder="Marinduque" disabled> 
+                                        <input type="hidden" name="Province:Marinduque">
+                                    </p>
+                                </p>
 
                                 <p style="font-size:20px"><strong>&emsp;&emsp;Town:</strong>     
-                                <input style="height:20px; width: 8em; font-size:14pt;" type="text" name="Town:" placeholder="Town" required></p>
+                                    <input style="height:20px; width: 9.1em; font-size:14pt;" type="text" name="Town:" placeholder="Town" required>
+                                </p>
 
                                 <p style="font-size:20px"><strong>&emsp;&emsp;Barrangay:</strong>     
-                                <input style="height:20px; width: 8em; font-size:14pt;" type="text" name="Barrangay:" placeholder="Barrangay" required></p>
+                                    <input style="height:20px; width: 6.5em; font-size:14pt;" type="text" name="Barrangay:" placeholder="Barrangay" required>
+                                </p>
 
                                 <p style="font-size:20px"><strong>&emsp;&emsp;District:</strong>     
-                                <input style="height:20px; width: 8em; font-size:14pt;" type="text" name="Barrangay district:" placeholder="Sitio/Bario" required></p>
+                                    <input style="height:20px; width: 8.1em; font-size:14pt;" type="text" name="Barrangay district:" placeholder="Sitio/Bario" required>
+                                </p>
 
                                 <p style="font-size:20px"><strong>&emsp;Shipping Option:</strong>   
-                                <p style="font-size:20px"><strong>&emsp;&emsp;Payment option:</strong>     
-                                <input style="height:20px; width: 8em; font-size:14pt;" type="text" name="Payment option:" placeholder="Cash on Delivery" disabled> </p></p>
+                                    <p style="font-size:20px"><strong>&emsp;&emsp;Delivery</strong>   
+                                        <input style="height:20px; width: 8em;" type="checkbox" name="Delivery" placeholder="Cash on Delivery"> </p>
+                                        <p style="font-size:20px"><strong>&emsp;&emsp;Dine-in</strong>     
+                                        <input style="height:20px; width: 8em;" type="checkbox" name="Dine-in" placeholder="Cash on Delivery"> </p></p>
                                 <input type="hidden" name="Payment option:Cash on Delivery">
-
-                                <p style="font-size:20px"><strong>&emsp;&emsp;Delivery:</strong>     
-                                <input style="height:20px; width: 8em; font-size:14pt;" type="text" name="Delivery:" placeholder="Delivery/Pick-up" required></p>
+                                <p style="font-size:20px"><strong>&emsp;Payment option:</strong> 
+                                    <p style="font-size:20px"><strong>&emsp;&emsp;Delivery:</strong>     
+                                        <input style="height:20px; width: 7.5em; font-size:14pt;" type="text" name="Delivery:" placeholder="Delivery">
+                                    </p>
+                                    <p style="font-size:20px"><strong>&emsp;&emsp;Dine-in:</strong>     
+                                        <input style="height:20px; width: 8em; font-size:14pt;" type="text" name="Dine-in:" placeholder="Dine-in" required>
+                                    </p>
+                                </p>
 
 
 
                                 <div data-ng-app="" data-ng-init="quantity=0;price=150;shipping=60">
 
                                     <p style="font-size:20px"><strong>&emsp;Payment Details</strong> 
-                                    <p style="font-size:20px"><strong>&emsp;&emsp;Quantity:</strong>
-                                    <input style="height:20px; width: 14; font-size:14pt;" type="number" name="Quantity " ng-model="quantity"></p></p>
+                                        <p style="font-size:20px"><strong>&emsp;&emsp;Quantity:</strong>
+                                        <input style="height:20px; width: 7.3em; font-size:14pt;" type="number" name="Quantity " ng-model="quantity"></p>
+                                    </p>
 
                                     <input type="hidden" name="_captcha" value="false">
 
                                     <p name="Total: " style="font-size:20px"><strong>&emsp;&emsp;MerchandiseSubtotal₱</strong>{{quantity * price}}
-                                    <input type="hidden" name="Merchandise Subtotal: ₱ {{quantity * price}}"></p>
+                                        <input type="hidden" name="Merchandise Subtotal: ₱ {{quantity * price}}">
+                                    </p>
                                     <p style="font-size:20px"><strong>&emsp;&emsp;ShippingSubtotal: ₱60</strong>
-                                    <input type="hidden" name="ShippingSubtotal: ₱60"></p>
+                                        <input type="hidden" name="ShippingSubtotal: ₱60">
+                                    </p>
                                     <p style="font-size:20px"><strong>&emsp;&emsp;Total Payment ₱</strong> {{quantity * price + shipping}}
-                                    <input type="hidden" name="Total Payment: ₱{{quantity * price + shipping}}">
+                                        <input type="hidden" name="Total Payment: ₱{{quantity * price + shipping}}">
                                     </p>
                                 </div>
                                 <input type="submit" value="Check Out" class="btn">
