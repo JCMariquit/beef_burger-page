@@ -102,7 +102,7 @@
                                     <p style="font-size:20px"><strong>&emsp;Shipping option:</strong>  
                                     <p style="font-size:20px"><strong>&emsp;&emsp;Dine-in&nbsp;&nbsp;</strong>  
                                         <input type="hidden" name="Shipping option">
-                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name=" " value="Dine-in" onclick="return ValidatePetSelection();">
+                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="." value="Dine-in" onclick="return ValidatePetSelection();">
                                         
                                     </p>
                                     <p style="font-size:20px"><strong>&emsp;&emsp;Delivery</strong>  
@@ -113,7 +113,7 @@
                                     <p style="font-size:20px"><strong>&emsp;Payment option:</strong>  
                                     <p style="font-size:20px"><strong>&emsp;&emsp;COD</strong> 
                                         <input type="hidden" name="Payment option"> 
-                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name=" " value="COD" onclick="return ValidatePetSelection();">
+                                        <input style="height:20px; width: 8em; font-size:14pt;" type="checkbox" name="." value="COD" onclick="return ValidatePetSelection();">
                                         
                                     </p>
                                    
@@ -123,7 +123,7 @@
                                     <script type="text/javascript">  
                                     function ValidatePetSelection()  
                                     {  
-                                        var checkboxes = document.getElementsByName(" ");   
+                                        var checkboxes = document.getElementsByName(".");   
                                         var numberOfCheckedItems = 0;  
                                         for(var i = 0; i < checkboxes.length; i++)  
                                         {  
